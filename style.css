@@ -4,40 +4,84 @@
   box-sizing: border-box;
 }
 
+#central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 100vh;
+}
+
 .main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   background-color: purple;
   align-items: center;
-  height: 100vh;
+  height: 700px;
+  width: 1500px;
 }
 
 .para {
-  background-color: white;
-  border: 2px solid black;
-  width: 600px;
-  height: 650px;
-  border-radius: 10px;
-}
-
-.para span {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  background-color: lightgray;
+  border: 2px solid black;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 20px;
+
+  span {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    .rm {
+        width: 130px;
+        height: 40px;
+        color: pink;
+        border: 2px solid purple;
+        transition: .3s;
+        border-radius: 5px;
+    }
+
+    .rm:hover {
+        background-color: purple;
+        transition: .3s;
+    }
+
+    .sb {
+        width: 130px;
+        height: 40px;
+       border-radius: 5px;
+        background-color: purple;
+        color: white;
+        transition: .3s;
+    }
+
+    .sb:hover {
+        background-color: lightgrey;
+        transition: .3s;
+    }
+
+  }
+
 }
 
-.picture_background {
-  width: 70px;
-  height: 60px;
-  border-radius: 50px;
+/* .para div {
   background-color: pink;
-}
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+} */
 
-.para div{
-    background-color: pink;
-    width: 200px;
-    height: 200px;
-    border-radius: 25px;
+.para img {
+  border-radius: 20px;
+  width: 200px;
+  border: 10px solid pink;
 }
